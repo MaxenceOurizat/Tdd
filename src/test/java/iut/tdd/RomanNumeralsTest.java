@@ -16,5 +16,22 @@ public class RomanNumeralsTest {
 		//Then
 		Assert.assertEquals(expected, actual);
 	}
+	@Test
+	public void should_return_II_when_2 () {
+		String input = "2";
+		String expected = "II";
+		RomanNumerals romanNumeral = new RomanNumerals();
+		String actual = romanNumeral.convertToRoman(input);
+		Assert.assertEquals(expected, actual);
+	}
 	
+	/*@Test
+	*public void should_return_III_when_3 () {
+	*	String input = "3";
+	*	String expected = "III";
+	*	RomanNumerals romanNumeral = new RomanNumerals();
+	*	String actual = romanNumeral.convertToRoman(input);
+	*	Assert.assertEquals(expected, actual);
+	*}
+	*/
 }

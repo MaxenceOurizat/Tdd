@@ -1,12 +1,27 @@
 package iut.tdd;
 
 public class RomanNumerals {
+	
 	public String convertToRoman(String arabe) {
-		return "I";
+		String res="";
+		int v = Integer.valueOf(arabe);
+		if(v>4){
+			for(int i=0; i<arabe.length();i++){
+				res=res+"I";
+			}
+		}
+		return res;
 	}
 
 	public Object convertFromRoman(String roman) {
-		return "1";
+		String res="";
+		int v = Integer.valueOf(roman);
+		if(v<4){
+			for(int i=0; i<roman.length();i++){
+				res=res+"1";
+			}
+		}
+		return res;
 	}
 
 }
